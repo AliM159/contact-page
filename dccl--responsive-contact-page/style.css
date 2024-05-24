@@ -1,0 +1,288 @@
+
+
+                                /* General Reset */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+                                    /* Font and Color Declration */
+
+
+
+
+:root {
+    --font: "Be Vietnam Pro", sans-serif;
+    --submit-text: #4036A9;
+    --emloyees-text: #111729;
+    --card-bg: #cdd5e03c;
+    --placeholder: #cdd5e0;
+    --white: #fff;
+}
+
+
+                            /* Body Styling */
+
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background-image: url(./bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font);
+    color: var(--white);
+}
+
+
+                                /* Logo Styling */
+
+
+
+.logo {
+    padding: 24px 0px 0px 80px;
+}
+
+
+
+                                    /* Main Styling */
+
+
+main{
+    max-width: 600px;
+    min-height: 600px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+                                    /* Header Styling */
+
+
+
+main .heading {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+h1 {
+    font-size: 2.9rem;
+    margin-bottom: 12px;
+}
+
+
+h3 {
+    line-height: 32px;
+    font-weight: 500;
+}
+
+
+
+                                /* Form Styling */
+
+
+
+main .form-containor {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 28px;
+}
+
+
+input, select, textarea, button {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    border: none;
+    font-family: var(--font);
+    width: 260px;
+    height: 44px;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+
+label {
+    font-size: 0.8rem;
+}
+
+
+.name-email, .size-subj {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.email, .subject {
+    margin-left: 24px;
+}
+
+
+.message {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 35px;
+}
+
+
+
+.message textarea {
+    width: 100%;
+    height: 100%;
+}
+
+
+.submit {
+    width: 100%;
+}
+
+
+.submit button {
+    width: 100%;
+    color: var(--submit-text);
+    font-weight: 700;
+}
+
+
+
+.submit button:hover {
+    background-image: url(./bg-image.svg);
+    color: var(--white);                       /* No resaon for the hover :) */
+    transition: 0.7s ease-out;
+}
+
+
+                                /* For Tablet */
+
+
+
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    
+    h3 {
+        line-height: 32px;
+        font-weight: 500;
+    }
+    
+
+    main {
+        max-width: 900px;
+        min-height: 600px;
+        margin-top: 16px;
+    }
+
+    main .form-containor {
+        width: 80%;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 18px;
+    }
+
+
+    main .heading {
+        margin-bottom: 30px;
+
+    }
+
+
+    input, select, textarea, button {
+        width: 300px;
+    }
+
+    .message {
+        height: 100px;
+    }
+
+    .email, .subject {
+        margin-left: 33px;
+    }
+}
+
+
+
+                                    /* Smaller than Tablet */
+
+
+
+@media (max-width: 844px) {
+
+    input, select, textarea, button {
+        width: 230px;
+    }
+
+}
+
+
+
+                                            /* For Phones */
+
+
+
+
+@media (max-width: 640px) {
+
+    body {
+        height: 120dvh;
+    }
+
+    main .form-containor {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+        height: 550px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .logo {
+        padding: 24px 0px 0px 30px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+    
+    input, select, textarea, button {
+        width: 100%;
+    }
+    .name-email, .size-subj {
+        display: block;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+    
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    .email, .subject {
+        margin-left: 0px;
+    }
+
+}
